@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  .data {
+
+    &__other-places{
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .data {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}

@@ -1,0 +1,80 @@
+.add {
+  text-align: center;
+  margin: 20px;
+
+  & form {
+    display: flex;
+    justify-content: space-between;
+
+    & .add__input {
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      border-color: $secundary-color;
+    }
+
+    & .add__button {
+      padding: 10px;
+      border: 1px solid $secundary-color;
+      background-color: $primary-color;
+      color: $secundary-color;
+      border-radius: 15px;
+      outline: none;
+
+      transition: all 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        background-color: darken($color: $primary-color, $amount: 10);
+        color: lighten($color: $secundary-color, $amount: 30);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .add {
+    margin: 0;
+
+    & form {
+      margin: 20px 0;
+      justify-content: space-around;
+    }
+  }
+
+  .scroll {
+    height: 160px;
+    overflow-y: scroll;
+    overflow: auto;
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .add {
+    margin: 0;
+
+    & form {
+      margin: 20px;
+      padding-right: 10px;
+    }
+  }
+
+  .scroll {
+    padding-right: 40px;
+    margin-top: 0;
+  }
+
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+}

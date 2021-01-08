@@ -1,0 +1,10 @@
+.nextweather {
+  width: 100%;
+  text-align: center;
+
+  &__days {
+    margin: 20px;
+    background-color: $background;
+    border-radius: 20px;
+  }
+}

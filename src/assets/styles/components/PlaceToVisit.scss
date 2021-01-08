@@ -1,0 +1,38 @@
+.place {
+  text-align: center;
+  display: none;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 20px;
+    position: relative;
+    
+    &--img {
+      background-color: $background;
+      padding: 10px;
+      height: 230px;
+      width: 180px;
+      border-radius: 20px;
+      background-image: url("https://cdn.pixabay.com/photo/2019/07/21/16/29/paris-4353082_960_720.jpg");
+      background-size: cover;
+      background-position: center;
+
+      & p {
+        color: white;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {  
+  .place {
+    display: block;
+
+    &__container {
+      margin: 20px 0;
+    }
+  }  
+}

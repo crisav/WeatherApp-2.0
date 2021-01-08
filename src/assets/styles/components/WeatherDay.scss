@@ -1,0 +1,49 @@
+.weatherday {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 10px;
+  background-color: $primary-color;
+
+  &__day {
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 80px;
+    }
+
+    & p {
+
+      & .bold {
+        font-weight: 700;
+        color: $secundary-color;
+      }
+
+      & .thin {
+        font-weight: 500;
+        color: rgb(158, 158, 158);
+      }
+    }
+  }
+
+  &__data {
+    background-color: $secundary-color;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    color: lighten($color: $primary-color, $amount: 10);
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+
+    & p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+}

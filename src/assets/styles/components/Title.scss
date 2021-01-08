@@ -1,0 +1,11 @@
+.title {
+  margin-bottom: 10px;
+  &__bold {
+    font-weight: 700;
+    color: darken($color: $secundary-color, $amount: 10);
+  }
+  &__thin {
+    font-weight: 500;
+    color: $primary-color;
+  }
+}

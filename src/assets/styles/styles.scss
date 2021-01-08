@@ -1,0 +1,15 @@
+@import "./base/Base.scss";
+@import "./base/Vars.scss";
+
+// Containers
+@import "./containers/App.scss";
+
+// Components
+@import "./components/CurrentWeather.scss";
+@import "./components/NextWeather.scss";
+@import "./components/Title.scss";
+@import "./components/WeatherDay.scss";
+@import "./components/PlaceToVisit.scss";
+@import "./components/AddPlace.scss";
+@import "./components/Spinner.scss";
+@import "./components/City.scss";
