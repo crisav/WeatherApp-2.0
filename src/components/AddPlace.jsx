@@ -80,8 +80,8 @@ const AddPlace = () => {
               id={item.id}
               location={item.location}
               country={item.country}
-              temperature={item.temperature}
-              image={item.image}
+              lat={item.lat}
+              lng={item.lng}
               places={places}
               setPlaces={setPlaces}
             />

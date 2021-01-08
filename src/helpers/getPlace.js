@@ -13,27 +13,17 @@ export const getPlace = async( dir ) => {
   if (resp.data.results.length === 0) {
     throw new Error(`No hay resultados para ${ dir }`);
   }
-
-  const { lat, lng } = resp.data.results[0].geometry
-
-  // API openweatgermap TO GET TEMP
-
-  const API_WEATHER = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=5d96aee95530c282c262bdf38d259718&units=metric`
-
-  const resp2 = await axios.get(API_WEATHER);
   
   const id = new Date().getTime();
-  const country = resp.data.results[0].components.country;
-  const location = resp.data.results[0].components.city;
-  const temperature = resp2.data.main.temp;
-  const image = resp2.data.weather[0].icon;
+  const { country, city: location }  = resp.data.results[0].components;
+  const { lat, lng } = resp.data.results[0].geometry
 
   return {
     id,
     country,
     location,
-    temperature,
-    image
+    lat,
+    lng
   }  
 
 };

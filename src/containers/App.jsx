@@ -38,10 +38,12 @@ const App = () => {
         (loading)
           ? <Spinner />
           :(<div>
-            <CurrentWeather
-              temperature={weather.current.temp}
-              image={weather.current.weather[0].icon}
-            />
+
+              <CurrentWeather
+                temperature={weather.current.temp}
+                image={weather.current.weather[0].icon}
+              />
+              
               <div className="data">
                 <NextWeather nextDays={ nextDays } />
                 <div className="data__other-places">
