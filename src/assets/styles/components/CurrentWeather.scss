@@ -11,7 +11,13 @@
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background-image: url("https://cdn.pixabay.com/photo/2014/08/01/15/51/manhattan-407703_960_720.jpg");
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.8),
+      rgba($secundary-color, 0.8)
+    ),
+    url("https://cdn.pixabay.com/photo/2017/03/27/12/07/central-park-2178286_960_720.jpg");
+    // background-image: linear-gradient($primary-color, $secundary-color);
     background-size: cover;
     background-position: center;
 
