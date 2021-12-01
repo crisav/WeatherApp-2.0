@@ -3,7 +3,7 @@
 ### ✨ [Demo](https://crisav.github.io/WeatherApp-2.0/)
 
 ```sh
-git clone git@github.com:crisav/WeatherApp.git
+git clone git@github.com:crisav/WeatherApp-2.0.git
 cd weather-app
 npm install
 npm run build
